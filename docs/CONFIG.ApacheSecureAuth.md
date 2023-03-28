@@ -65,6 +65,7 @@ can trick most browsers into forgetting cached HTTP Basic Auth credentials.
         AuthUserFile /dev/null
         Require valid-user
   </If>
+  <Else>
     AuthType Basic
     AuthName "MISP"
     AuthBasicProvider ldap
